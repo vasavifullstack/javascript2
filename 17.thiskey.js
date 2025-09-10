@@ -44,3 +44,5 @@ var obj ={
     }
 }
 obj.getDetails();
+
+console.log("vasavi");
