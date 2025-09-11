@@ -21,7 +21,7 @@ function car(brand,model,color){
     console.log("KIA");
     
     this.brand="Benz";
-    this.model="Mercedces";
+    this.model="Mercedes";
     this.color="black";
     console.log(this);
 }
