@@ -10,3 +10,18 @@ catch(error){
 finally{
     console.log("final");
 }
+
+try{
+    let customername="HTML";
+    if(customername){
+        customername =customername.toLowerCase();
+        console.log(customername);
+
+    }
+    else{
+        throw new Error("customer are not satisfy");
+    }
+}
+catch(error){
+    console.log(error);
+}
