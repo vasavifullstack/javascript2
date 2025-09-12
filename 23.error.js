@@ -25,3 +25,14 @@ try{
 catch(error){
     console.log(error);
 }
+
+try{
+    let num="vasavi";
+    if(num==even){
+        console.log("even");
+
+    }
+}
+catch(error){
+    console.log(error.message);
+}
