@@ -16,7 +16,8 @@ function accountDetails(accountnumber,IFC){
 
 
 //prototype is a property function(constructor fun) used to inheritance and 
-//share the methods among instances created bt that function when its is used as a constuctor.
+//share the methods among instances created bt that function when 
+// its is used as a constuctor.
 function car(brand,model,color){
     console.log("KIA");
     
