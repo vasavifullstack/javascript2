@@ -10,7 +10,7 @@ catch(error){
 finally{
     console.log("final");
 }
-
+//throw new error used to create an intentional error in try block
 try{
     let customername="HTML";
     if(customername){
