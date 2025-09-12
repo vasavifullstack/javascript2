@@ -29,8 +29,10 @@ var empDetails1={
     empnumber:"34345",
     age:"21"
 }
-empDetails.getempDetails.call(empDetails1,"10","2002");//call can pass objects and also individual parameters
-empDetails.getempDetails.apply(empDetails1,["50","2005"]);//apply like array arguments
+empDetails.getempDetails.call(empDetails1,"10","2002");
+//call can pass objects and also individual parameters
+empDetails.getempDetails.apply(empDetails1,["50","2005"]);
+//apply like array arguments
 //bind used for return the new fun
 console.log(empDetails.getempDetails.bind(empDetails1,"10","2002"));
 let newempDetails1 =empDetails.getempDetails.bind(empDetails,40,2005);
