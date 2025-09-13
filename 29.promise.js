@@ -10,7 +10,7 @@ function register() {
         setTimeout(() => {
             console.log("i am register for test");
             resolve("success")
-        }, 5000)
+        }, 8000)
     })
 }
 
@@ -22,14 +22,14 @@ function login() {
         }, 3000)
     })
 }
-login().then((data)=>{console.log(data)}).catch((err)=>{console.log(err)})
+
 register().then((data) => { console.log(data) }).catch((err) => console.log(err))
 login().then((data)=>{console.log(data)}).catch((err)=>{console.log(err)})
 function login() {
     return new Promise((resolve, reject) => {
         setTimeout(() => {
             console.log("login with usermailID");
-            resolve("success")                                       //reject("reject")
+            reject("reject")
         }, 3000)
     })
 }
