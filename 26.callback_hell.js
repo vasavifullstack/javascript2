@@ -52,27 +52,27 @@ Day1(()=>{
 
 //sleep() to stop process at sometime
 
-// function sleep(milliSeconds){
-//     var startDateTime = new Date().getTime();
-//     var endDateTime =startDateTime +milliSeconds;
-//     while(startDateTime < endDateTime){
-//         console.log("processing");
+function sleep(milliSeconds){
+    var startDateTime = new Date().getTime();
+    var endDateTime =startDateTime + milliSeconds;
+    while(startDateTime < endDateTime){
+        console.log("processing");
 
-//     }
-// }
+    }
+}
 
 function applyTest(callbackfn){
-    //sleep(5000);
+    sleep(5000);
     console.log("I am applying for test");
     callbackfn();
 }
 function testLink(callbackfn){
-    //sleep(3000);
+    sleep(3000);
     console.log("generating test link");
     callbackfn();
 }
 function interview(callbackfn){
-    //sleep(6000);
+    sleep(6000);
     console.log("interview schedule");
     callbackfn();
 }
