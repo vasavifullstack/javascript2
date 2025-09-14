@@ -43,7 +43,7 @@ function career(callbackfun){
 }
 career(function(){                       ///anonmous fun
     console.log("IT");
-});
+});                                                                                      
 career(()=>{                          //arrow fun
     console.log("software engineering");
 });

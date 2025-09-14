@@ -55,19 +55,19 @@ Day1(()=>{
 function sleep(milliSeconds){
     var startDateTime = new Date().getTime();
     var endDateTime =startDateTime + milliSeconds;
-    while(startDateTime < endDateTime){
-        console.log("processing");
+    while(new Date().getTime()< endDateTime){
+        //console.log("processing");
 
     }
 }
 
 function applyTest(callbackfn){
-    sleep(5000);
+    sleep(7000);
     console.log("I am applying for test");
     callbackfn();
 }
 function testLink(callbackfn){
-    sleep(3000);
+    sleep(5000);
     console.log("generating test link");
     callbackfn();
 }
@@ -84,10 +84,10 @@ function JoiningDate(){
     console.log("onboarding");
     
 }
-applyTest(()=>{
-    testLink(()=>{
-        interview(()=>{
-            offerLetter(()=>{
+applyTest(function(){
+    testLink(function(){
+        interview(function(){
+            offerLetter(function(){
                 JoiningDate();
             });
 
