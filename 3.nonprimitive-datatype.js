@@ -2,8 +2,8 @@
 
 //checkbox true or false
 
-var name = "vasavi";
-console.log(name);
+var name1 = "vasavi";
+console.log(name1);
 
 let subjects = [10, 20, 30, 40];
 console.log(subjects);
